@@ -1,0 +1,311 @@
+body {
+  text-align: center;
+  margin: auto;
+}
+
+.content {
+  background-color: black;
+  margin: auto;
+  height: auto;
+  border-style: groove;
+  width: 1260px;
+}
+
+.nav {
+  width: auto;
+  height: 60px;
+  color: whitesmoke;
+  margin-left: 350px;
+
+}
+
+
+ul li {
+  /* background-color: darkgray; */
+  list-style: none;
+  float: left;
+  margin-top: 3px;
+  padding: 15px;
+  font-family: arial black;
+  font-size: 17PX;
+  transition: 2s;
+}
+
+ul li:hover {
+  background-color: darkkhaki;
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  padding: 10px;
+  font-family: 'Arial black';
+  font-size: 17PX;
+  transition: 2s;
+  border-radius: 0% 25% 0% 25%;
+}
+
+h1 {
+  font-family: ARial black;
+  font-size: 30PX;
+  margin-left: 10px;
+  background-color: white;
+  COLOR: black;
+  text-align: center;
+
+
+}
+
+.LOGO {
+  border-style: double;
+  margin: auto;
+
+}
+
+.aside {
+  background-color: black;
+  width: 1260PX;
+
+}
+
+ol li {
+  list-style: none;
+
+  color: white;
+  font-family: arial black;
+  margin-top: auto;
+
+}
+
+u {
+  color: white;
+  text-underline-position: auto;
+}
+
+P {
+  color: rgb(245, 244, 244);
+  margin-left: 50px;
+  text-align: center;
+
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+button {
+  position: relative;
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 48px;
+  width: 120px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 55px;
+  -webkit-box-reflect: bottom 1px linear-gradient(transparent, #0004);
+  float: left;
+  margin-left: 7px;
+}
+
+button span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  text-align: center;
+  background: #2e2e2e;
+  color: rgba(255, 255, 255, 0.781);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+button:hover span {
+  color: rgba(255, 255, 255, 1);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 400%;
+  opacity: 0;
+  transition: 0.5s;
+  background: linear-gradient(45deg,
+      #91155d,
+      #525296,
+      #0f0,
+      #ff0,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0);
+  animation: animate123 20% linear infinte;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: 400%;
+  filter: blur(20px);
+  transition: 0.5s;
+  background: linear-gradient(45deg,
+      #91155d,
+      #525296,
+      #0f0,
+      #ff0,
+      #fb0094,
+      #00f,
+      #0f0,
+      #ff0);
+  animation: animate123 20% linear infinte;
+}
+
+button:hover::before,
+button:hover::after {
+  opacity: 1;
+}
+
+@keyframes animate123 {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+button span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.father {
+  width: 1260px;
+  height: 500px;
+  ;
+  background-color: black;
+
+}
+
+.HEADING {
+  font-family: arial black;
+  background-color: black;
+  color: white;
+}
+
+.PARA {
+  font-size: medium;
+  font-family: arial black;
+  text-align: justify;
+}
+
+.card {
+  display: flex;
+  height: 70px;
+  width: 270px;
+}
+
+.card svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.card svg {
+  transform: scale(1);
+}
+
+.card .social-link1:hover {
+  background-color: #1a1e22;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+  background-color: #0059f7;
+  animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+  background-color: #1d4292;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contact {
+  background-color: black;
+  color: whitesmoke;
+  height: 600px;
+  width: 1260px;
+}
+
+.service {
+  width: 1260px;
+  height: 400px;
+  background-color: black;
+}
